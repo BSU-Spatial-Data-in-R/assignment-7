@@ -2,7 +2,7 @@
 # You have to specify link as a character string
 # so it might look like
 
-#fs.shapefile <- download_unzip_link(link = "link to your webpage")
+#fs.shapefile <- download_unzip_read(link = "link to your webpage")
 
  download_unzip_read <- function(link){
   tmp <- tempfile()
