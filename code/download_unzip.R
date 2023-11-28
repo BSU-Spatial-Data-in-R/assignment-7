@@ -4,12 +4,10 @@
 
 #fs.shapefile <- download_unzip_link(link = "link to your webpage")
 
-download_unzip_read(link){
+ download_unzip_read <- function(link){
   tmp <- tempfile()
   download.file(link, tmp)
   tmp2 <- tempfile()
   unzip(zipfile=tmp, exdir=tmp2)
-  shapefile.sf –read_sf(tmp2)
+  shapefile.sf <- read_sf(tmp2)
   }
-
-
